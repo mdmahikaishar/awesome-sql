@@ -1,0 +1,35 @@
+{
+  "name": "awesome-sql",
+  "version": "0.0.3",
+  "description": "A light weight awesome sql sdk with promises and typescript.",
+  "author": "mdmahikaishar <mahikaishar@gmail.com>",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "dev": "tsx ",
+    "lint": "tsc --noEmit",
+    "test": "vitest run",
+    "build": "tsup ./src/index.ts --format cjs,esm --dts"
+  },
+  "license": "MIT",
+  "keywords": [
+    "awesome-sql",
+    "orm",
+    "mysql",
+    "sql",
+    "sql-sdk"
+  ],
+  "dependencies": {
+    "dottie": "^2.0.6",
+    "mysql2": "^3.5.2"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.26.2",
+    "@types/dottie": "^2.0.5",
+    "@types/node": "^20.4.2",
+    "tsup": "^7.2.0",
+    "typescript": "^5.1.6",
+    "vitest": "^0.33.0"
+  }
+}
